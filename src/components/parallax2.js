@@ -82,7 +82,7 @@ class Parallax extends React.Component {
     <div className={classNames(classes.container,"container")}>
      <div className="row">
        <div className={(window.innerWidth>600)?classNames(classes.text,"col-12 col-md-3"):classNames("col-12 col-md-3")} style={{textAlign:'center',}}>
-        <Link to={content.link}><h1>{content.heading}</h1></Link>
+        <Link to={content.link} style={{ textDecoration: "none" }}><h1>{content.heading}</h1></Link>
         {content.description} 
         </div>
        <div ref={this.parent} className={(window.innerWidth>600)?classNames(classes.images,"col-6"):"col-12"}>

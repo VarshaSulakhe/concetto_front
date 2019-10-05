@@ -159,7 +159,7 @@ class Parallax extends React.Component {
             }
             style={{ textAlign: "center" }}
           >
-            <Link to={content.link}>
+            <Link to={content.link} style={{ textDecoration: "none"}}>
               <h1 className={classes.heading}>{content.heading}</h1>
             </Link>
             {content.description}
