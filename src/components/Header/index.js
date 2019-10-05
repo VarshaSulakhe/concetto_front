@@ -14,6 +14,7 @@ class Header extends Component {
     let scrollTop = window.pageYOffset;
     const { isMenuOpen } = this.state;
     this.setState({ isMenuOpen: !isMenuOpen });
+    this.props.onToggleMenu && this.props.onToggleMenu(!isMenuOpen)
     if (!isMenuOpen)
       window.scrollTo(0, scrollTop + window.innerHeight / 10 + 1);
     else window.scrollTo(0, scrollTop - window.innerHeight / 10 - 1);

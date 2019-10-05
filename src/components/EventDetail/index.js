@@ -49,7 +49,8 @@ class EventDetail extends Component {
     this.registerShow = this.registerShow.bind(this);
   }
   state = {
-    active: "about"
+    active: "about",
+    isMenuOpen: false
   };
 
   aboutShow = active => {
@@ -72,6 +73,12 @@ class EventDetail extends Component {
       active: "register"
     });
   };
+
+  onToggle = isMenuOpen => {
+    this.setState({
+      isMenuOpen
+    })
+  }
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -80,7 +87,7 @@ class EventDetail extends Component {
     const { classes } = this.props;
     const { event } = this.props;
     return (
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex",position: this.state.isMenuOpen ? "fixed" : "unset"}}>
         <div className={classes.verticalTab}>
           <div>
             <a href="home">
@@ -130,7 +137,7 @@ class EventDetail extends Component {
             </button>
           </div>
         </div>
-        {window.innerWidth < 960 ? <Header /> : <HomeHeader />}
+        {window.innerWidth < 960 ? <Header onToggleMenu={this.onToggle}/> : <HomeHeader onToggleMenu={this.onToggle}/>}
         <div className={classes.image}>
           <img src={event.img} alt={event.name} className="event-img" />
           <div

@@ -11,7 +11,8 @@ class Login extends Component {
     super(props);
     this.state = {
       isError: false,
-      error_message: ""
+      error_message: "",
+      isMenuOpen: false
     };
     this.formRef = React.createRef();
     this.passRef = React.createRef();
@@ -59,13 +60,19 @@ class Login extends Component {
     }
   }
 
+  onToggle = isMenuOpen => {
+    this.setState({
+      isMenuOpen
+    })
+  }
+
   render() {
     const { isError, error_message } = this.state;
     if (window.innerWidth < 1100) return <ComingSoon />;
     return (
       <div>
-        <Header />
-        <section class="user">
+        <Header onToggleMenu={this.onToggle} />
+        <section class="user" style={{position: this.state.isMenuOpen ? "fixed" : "unset"}}>
           <div class="user_options-container">
             <div class="user_options-text">
               <div class="user_options-unregistered">

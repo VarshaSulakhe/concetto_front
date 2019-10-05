@@ -8,7 +8,8 @@ class OurTeam extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      width: window.innerWidth
+      width: window.innerWidth,
+      isMenuOpen: false
     };
   }
 
@@ -16,11 +17,18 @@ class OurTeam extends Component {
     window.scrollTo(0, 0);
   }
 
+
+  onToggle = isMenuOpen => {
+    this.setState({
+      isMenuOpen
+    })
+  }
+
   render() {
     const { width } = this.state;
     return (
-      <div>
-        <Header />
+      <div style={{position: this.state.isMenuOpen ? "fixed" : "unset"}}>
+        <Header onToggleMenu={this.onToggle} />
         <br />
         <br />
         {width > 486 ? (
