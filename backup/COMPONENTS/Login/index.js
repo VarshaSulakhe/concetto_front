@@ -12,7 +12,6 @@ class Login extends Component {
     this.state = {
       isError: false,
       error_message: "",
-      isMenuOpen: false
     };
     this.formRef = React.createRef();
     this.passRef = React.createRef();
@@ -61,9 +60,7 @@ class Login extends Component {
   }
 
   onToggle = isMenuOpen => {
-    this.setState({
-      isMenuOpen
-    })
+    document.body.style.overflow= isMenuOpen ? "hidden" : "scroll"
   }
 
   render() {
@@ -72,7 +69,7 @@ class Login extends Component {
     return (
       <div>
         <Header onToggleMenu={this.onToggle} />
-        <section class="user" style={{position: this.state.isMenuOpen ? "fixed" : "unset"}}>
+        <section class="user">
           <div class="user_options-container">
             <div class="user_options-text">
               <div class="user_options-unregistered">

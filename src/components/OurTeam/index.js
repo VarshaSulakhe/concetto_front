@@ -9,7 +9,6 @@ class OurTeam extends Component {
     super(props);
     this.state = {
       width: window.innerWidth,
-      isMenuOpen: false
     };
   }
 
@@ -19,15 +18,13 @@ class OurTeam extends Component {
 
 
   onToggle = isMenuOpen => {
-    this.setState({
-      isMenuOpen
-    })
+    document.body.style.overflow= isMenuOpen ? "hidden" : "scroll"
   }
 
   render() {
     const { width } = this.state;
     return (
-      <div className="team-page" style={{position: this.state.isMenuOpen ? "fixed" : "unset"}}>
+      <div className="team-page">
         <Header onToggleMenu={this.onToggle} />
         <br />
         <br />

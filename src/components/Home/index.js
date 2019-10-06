@@ -54,7 +54,6 @@ class Home extends Component {
       offset: initial_offset,
       header: false,
       x: 0,
-      isMenuOpen: false
     };
     this.homeRef = React.createRef();
   }
@@ -119,7 +118,7 @@ class Home extends Component {
     const { classes } = this.props;
     const { offset, x } = this.state;
     return (
-      <div style={{position: this.state.isMenuOpen ? "fixed" : "unset"}}>
+      <div>
         <section id="scroll_down" className="demo">
           <a
             onClick={() => {
@@ -133,9 +132,7 @@ class Home extends Component {
         </section>
         <HomeHeader
           onToggleMenu={(isMenuOpen) => {
-            this.setState({
-              isMenuOpen
-            })
+            document.body.style.overflow= isMenuOpen ? "hidden" : "scroll"
           }}
         ></HomeHeader>
         <div className={classes.logo}>

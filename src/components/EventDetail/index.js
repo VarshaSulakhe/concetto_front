@@ -51,7 +51,6 @@ class EventDetail extends Component {
   }
   state = {
     active: "about",
-    isMenuOpen: false
   };
 
   aboutShow = active => {
@@ -76,9 +75,7 @@ class EventDetail extends Component {
   };
 
   onToggle = isMenuOpen => {
-    this.setState({
-      isMenuOpen
-    })
+    document.body.style.overflow= isMenuOpen ? "hidden" : "scroll"
   }
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -88,7 +85,7 @@ class EventDetail extends Component {
     const { classes } = this.props;
     const { event } = this.props;
     return (
-      <div style={{ display: "flex",position: this.state.isMenuOpen ? "fixed" : "unset"}}>
+      <div style={{ display: "flex"}}>
         <div className={classes.verticalTab}>
           <div>
             <NavLink to="../home">

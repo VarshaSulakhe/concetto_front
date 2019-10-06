@@ -45,7 +45,6 @@ class EventDetail extends Component {
       active: 0,
       departmental: events.filter(event => event.is_club === 0),
       clubEvents: events.filter(event => event.is_club === 1),
-      isMenuOpen: false
     };
   }
 
@@ -67,12 +66,10 @@ class EventDetail extends Component {
     const { classes, events } = this.props;
     const { departmental, clubEvents } = this.state;
     return (
-      <div style={{position: this.state.isMenuOpen ? "fixed" : "unset"}}>
+      <div>
         <div className={classes.root}>
           <HomeHeader onToggleMenu={(isMenuOpen) => {
-            this.setState({
-              isMenuOpen
-            })
+            document.body.style.overflow= isMenuOpen ? "hidden" : "scroll"
           }}/>
           <div className={classes.verticalTab}>
             <div>
