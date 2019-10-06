@@ -80,3 +80,10 @@ cursor: pointer;
 a .highlighted{
 text-decoration: underline;
 }
+.team-page{
+  background: url("https://concetto-front.s3.ap-south-1.amazonaws.com/team_bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Grenze&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Atomic+Age&display=swap');
 
 .row-header {
   margin: 0px auto;
@@ -94,14 +95,14 @@ color: white;
   /* float:left; */
   top: 35px;
   left:80px;
-  z-index: 200;
+  z-index: 1035;
 }
 
 body
 {
   margin: 0;
   padding: 0;
-  padding-bottom: 38vh;
+  /* padding-bottom: 38vh; */
   width: 100vw;
   font-family: 'Grenze', "chaparral-pro","Georgia","Times New Roman",Times,serif;
   overflow-x: hidden;
@@ -120,14 +121,7 @@ body
 	overflow-y: scroll;
 	margin-bottom: 25px;
  }
-}
-
-html,body{
-  position: relative;
-  overflow-x: hidden;
-}
-
-#thin::-webkit-scrollbar {
+ #thin::-webkit-scrollbar {
 	width: 10px;
 	background-color: #F5F5F5;
 }
@@ -147,6 +141,14 @@ html,body{
 									   color-stop(0.72, rgb(70,70,70)),
 									   color-stop(0.86, rgb(59,59,59)))
 }
+
+}
+
+html,body{
+  position: relative;
+  overflow-x: hidden;
+}
+
 
 .nav-link
 {
@@ -333,7 +335,13 @@ html,body{
   transition: .3s;
   border: 0px;
 }
-button .btn-2:focus{
+button :focus{
+  outline: none !important;
+}
+a :focus{
+  outline: none !important;
+}
+.nav-link :focus{
   outline: none !important;
 }
   .btn-2:after {
@@ -359,4 +367,15 @@ box-shadow: none;
 }
 .active-bottom {
   border-bottom: 2px solid white;
+}
+
+.title{
+  color: lightblue;
+  font-family: "Atomic Age",Arial, Helvetica, sans-serif;
+  /* font-size: 2.2rem; */
+  /* text-shadow: 2px 2px 2px #aaa; */
+}
+
+.title:hover{
+  color: lightblue;
 }

@@ -7,7 +7,7 @@ export const CoreTeam = [
   },
   {
     name: "Ashutosh Jindal",
-    post: "Co-Cordinator",
+    post: "Co-Coordinator",
     pic:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/Ashutosh+Jindal-+Co-Coordinator.jpg"
   },
@@ -28,6 +28,12 @@ export const CoreTeam = [
     post: "Security Head",
     pic:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/Tarun+Kumar+security+(head).jpg"
+  },
+  {
+    name: "Vislavath Shirisha",
+    post: "Exhibition Coordinator",
+    pic:
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/Sirisha+.jpg"
   },
   {
     name: "Sirigireddy Dhana Laxmi",
@@ -72,7 +78,13 @@ export const CoreTeam = [
       "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/Shreyansh.jpg"
   },
   {
-    name: "Sridhar Goel",
+    name: "Vaibhav Mahajan",
+    post: "Sponsership Team",
+    pic:
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/Vaibhav.jpg"
+  },
+  {
+    name: "Shridhar Goel",
     post: "Technical Team",
     pic:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/ShridharGoel.jpg"
@@ -82,12 +94,6 @@ export const CoreTeam = [
     post: "Promotion Team",
     pic:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/Shweta+Suman.jpg"
-  },
-  {
-    name: "Vislavath Shirisha",
-    post: "Sponsership Team",
-    pic:
-      "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/Sirisha+.jpg"
   },
   {
     name: "Keshav Kumar Singh",

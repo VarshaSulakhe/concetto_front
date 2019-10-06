@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ComingSoon from "../ComingSoon";
 import { NavLink } from "react-router-dom";
 
 class Header extends Component {
@@ -11,27 +10,28 @@ class Header extends Component {
     this.toggleMenu = this.toggleMenu.bind(this);
   }
   toggleMenu() {
-    let scrollTop = window.pageYOffset;
     const { isMenuOpen } = this.state;
     this.setState({ isMenuOpen: !isMenuOpen });
     this.props.onToggleMenu && this.props.onToggleMenu(!isMenuOpen)
-    if (!isMenuOpen)
-      window.scrollTo(0, scrollTop + window.innerHeight / 10 + 1);
-    else window.scrollTo(0, scrollTop - window.innerHeight / 10 - 1);
   }
   render() {
     const { isMenuOpen } = this.state;
     return (
-      <div className="header fixed-top">
+      <div
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+        className="header fixed-top"
+      >
         <nav className="navbar navbar-expand-md navbar-dark">
-          <a className="navbar-brand" href="home">
-            <span className="helper"></span>
-            <img
-              src="https://concetto-front.s3.ap-south-1.amazonaws.com/logo.png"
-              className="logo-header"
-              alt={"CONCETTO"}
-            />
-          </a>
+          <NavLink to="../home" exact strict>
+            <a className="navbar-brand">
+              <span className="helper"></span>
+              <img
+                src={window.location.origin + "/images/logo.png"}
+                className="logo-header"
+                alt={"CONCETTO"}
+              />
+            </a>
+          </NavLink>
           <div id="menuToggle">
             <input
               type="checkbox"
@@ -64,7 +64,7 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link"
-                  to="/coming_soon"
+                  to="/workshops"
                   onClick={this.toggleMenu}
                 >
                   WORKSHOPS
@@ -79,7 +79,7 @@ class Header extends Component {
                   EXHIBITION
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink
                   className="nav-link"
                   to="/login"
@@ -87,7 +87,7 @@ class Header extends Component {
                 >
                   LOGIN
                 </NavLink>
-              </li>
+              </li> */}
               {/* <li>
                 <NavLink
                   className="nav-link"

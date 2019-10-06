@@ -8,11 +8,11 @@ import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 // import { fetchEvents, getEvent } from "../redux/Actions/Events";
 // import { loginUser, logoutUser, registerUser } from "../redux/Actions/Auth";
 // import { fetchUsers, editUser, editPassword } from "../redux/Actions/Users";
-import Login from "./Login";
 import EventDetail from "./EventDetail";
 import OurTeam from "./OurTeam";
 import ComingSoon from "./ComingSoon";
 import { Events } from "../shared/Events";
+import Workshops from "./Workshops";
 
 // const mapStateToProps = state => {
 //   return {
@@ -195,9 +195,10 @@ class Main extends Component {
               <EventDetail events={this.props.events} auth={this.props.auth} />
             )}
           /> */}
-          <Route exact path="/login" component={() => <Login />} />
+          {/* <Route exact path="/login" component={() => <Login />} /> */}
           <Route exact path="/our_team" component={() => <OurTeam />} />
           <Route exact path="/coming_soon" component={() => <ComingSoon />} />
+          <Route exact path="/workshops" component={() => <Workshops />} />
           <Route
             exact
             path="/events"

@@ -27,28 +27,32 @@ class OurTeam extends Component {
   render() {
     const { width } = this.state;
     return (
-      <div style={{position: this.state.isMenuOpen ? "fixed" : "unset"}}>
+      <div className="team-page" style={{position: this.state.isMenuOpen ? "fixed" : "unset"}}>
         <Header onToggleMenu={this.onToggle} />
         <br />
         <br />
         {width > 486 ? (
-          <h2 align="center">
+          <h2 align="center" style={{ color: "black" }}>
             <a
               href="#"
-              className="highlighted"
-              style={{ borderBottom: "2px solid white" }}
+              className="title highlighted"
+              style={{ borderBottom: "2px solid black", color: "black" }}
             >
               {" "}
               CORE TEAM{" "}
             </a>
-            | <a href="#developers"> DEVELOPERS</a>{" "}
+            |{" "}
+            <a href="#developers" className="title" style={{ color: "black" }}>
+              {" "}
+              DEVELOPERS
+            </a>{" "}
           </h2>
         ) : (
-          <h2 align="center">
+          <h2 align="center" style={{ color: "black" }}>
             <a
               href="#"
               className="highlighted"
-              style={{ borderBottom: "2px solid white" }}
+              style={{ borderBottom: "2px solid black", color: "black" }}
             >
               {" "}
               OUR TEAM{" "}

@@ -63,18 +63,19 @@ class Home extends Component {
     window.scrollTo(0, 0);
     // this.setState({ x: window.scrollY });
     window.addEventListener("scroll", this.handleScroll);
+    document.body.style.paddingBottom = "38vh";
   }
   componentWillUnmount() {
     // this.props.makeShowLogo();
-    window.scrollTo(0,0);
+    document.body.style.paddingBottom = "0";
+    window.scrollTo(0, 0);
     window.removeEventListener("scroll", this.handleScroll);
   }
 
   handleScroll = event => {
     let scrollTop = window.pageYOffset;
     const { offset, header } = this.state;
-    if(window.innerWidth > 800)
-    this.setState({ x: window.scrollY });
+    if (window.innerWidth > 800) this.setState({ x: window.scrollY });
     if (scrollTop > window.innerHeight / 10) {
       if (!header) {
         this.setState({
@@ -139,7 +140,7 @@ class Home extends Component {
         ></HomeHeader>
         <div className={classes.logo}>
           <img
-            src="https://concetto-front.s3.ap-south-1.amazonaws.com/logo.png"
+            src="images/logo.png"
             className={`logo logo-home`}
             ref={this.homeRef}
             alt={Loading}
@@ -164,27 +165,13 @@ class Home extends Component {
         }
         <div className={classes.parallax}>
           {HomeContent.map((content, id) => {
-            if (id % 2===0)
-              return (
-                <Parallax
-                  x={x}
-                  key={id.toString()}
-                  content={content}
-                />
-              );
+            if (id % 2 === 0)
+              return <Parallax x={x} key={id.toString()} content={content} />;
             else
               return window.innerWidth > 800 ? (
-                <Parallax2
-                  x={x}
-                  key={id.toString()}
-                  content={content}
-                />
+                <Parallax2 x={x} key={id.toString()} content={content} />
               ) : (
-                <Parallax
-                  x={x}
-                  id={id.toString()}
-                  content={content}
-                />
+                <Parallax x={x} id={id.toString()} content={content} />
               );
           })}
         </div>

@@ -1,6 +1,6 @@
 export const HomeContent = [
   {
-    link: "coming_soon",
+    link: "home",
     heading: "ABOUT US",
     image1: "https://concetto-front.s3.ap-south-1.amazonaws.com/about1.jpg",
     image2: "https://concetto-front.s3.ap-south-1.amazonaws.com/about2.jpg",
@@ -42,7 +42,7 @@ export const HomeContent = [
       "Organized by the various clubs of IIT (ISM) Dhanbad, are the attraction of Concetto'19. Having a special combination of management and technical prowess, club events provide a platform to budding entrepreneurs to showcase their skills and to prove their mettle among the very best in the field."
   },
   {
-    link: "coming_soon",
+    link: "workshops",
     heading: "WORKSHOPS",
     image1: "https://concetto-front.s3.ap-south-1.amazonaws.com/workshop1.jpg",
     image2: "https://concetto-front.s3.ap-south-1.amazonaws.com/workshop3.jpg",

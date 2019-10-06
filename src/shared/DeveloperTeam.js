@@ -1,5 +1,14 @@
 export const DeveloperTeam = [
   {
+    name: "Sanchay Goel",
+    post: "Web Coordinator",
+    pic:
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/dev-team/sanchay.jpg",
+    fb: "https://www.facebook.com/sanchay.goel.7",
+    linkedin: "https://www.linkedin.com/in/sanchay-goel-703649166/",
+    git: "https://github.com/Sanchay-Goel"
+  },
+  {
     name: "Chirag Jain",
     post: "FrontEnd Developer",
     pic:

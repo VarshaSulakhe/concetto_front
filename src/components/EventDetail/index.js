@@ -9,6 +9,7 @@ import Register from "./Register";
 import Mobileview from "./Mobileview";
 import Header from "../Header/index";
 import HomeHeader from "../HomeHeader/index";
+import { NavLink } from "react-router-dom";
 
 const styles = theme => ({
   verticalTab: {
@@ -35,7 +36,7 @@ const styles = theme => ({
     marginTop: "50px",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "0px",
-      marginTop: "50px",
+      marginTop: "50px"
     }
   }
 });
@@ -90,13 +91,13 @@ class EventDetail extends Component {
       <div style={{ display: "flex",position: this.state.isMenuOpen ? "fixed" : "unset"}}>
         <div className={classes.verticalTab}>
           <div>
-            <a href="home">
+            <NavLink to="../home">
               <img
-                src="https://concetto-front.s3.ap-south-1.amazonaws.com/logo.png"
+                src={window.location.origin + "/images/logo.png"}
                 className="img-fluid"
                 alt={Loading}
               />
-            </a>
+            </NavLink>
           </div>
           <div className="btnFlex">
             <button
@@ -146,13 +147,14 @@ class EventDetail extends Component {
               fontWeight: 800,
               textTransform: "capitalize"
             }}
+            className="title"
           >
             {event.name}
           </div>
           <div className={classes.desktopView}>
             {this.state.active === "about" && (
               <About event={this.props.event} />
-              )}
+            )}
             {this.state.active === "rules" && (
               <Rules event={this.props.event} />
             )}
