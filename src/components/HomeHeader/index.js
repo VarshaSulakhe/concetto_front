@@ -10,13 +10,13 @@ class Header extends Component {
     this.toggleMenu = this.toggleMenu.bind(this);
   }
   toggleMenu() {
-    let scrollTop = window.pageYOffset;
+    //let scrollTop = window.pageYOffset;
     const { isMenuOpen } = this.state;
     this.setState({ isMenuOpen: !isMenuOpen });
     this.props.onToggleMenu && this.props.onToggleMenu(!isMenuOpen)
     if (!isMenuOpen)
-      window.scrollTo(0, scrollTop + window.innerHeight / 10 + 1);
-    else window.scrollTo(0, scrollTop - window.innerHeight / 10 - 1);
+      window.scrollBy(0, window.innerHeight / 10 + 1);
+    else window.scrollBy(0, - window.innerHeight / 10 - 1);
   }
   render() {
     const { isMenuOpen } = this.state;
@@ -56,6 +56,15 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link"
+                  to="/about-theme"
+                  onClick={this.toggleMenu}
+                >
+                  ABOUT THEME
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="nav-link"
                   to="/events"
                   onClick={this.toggleMenu}
                 >
@@ -74,7 +83,7 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link"
-                  to="/coming_soon"
+                  to="/coming-soon"
                   onClick={this.toggleMenu}
                 >
                   EXHIBITION
@@ -92,7 +101,7 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link"
-                  to="/our_team"
+                  to="/our-team"
                   onClick={this.toggleMenu}
                 >
                   OUR TEAM
@@ -101,7 +110,7 @@ class Header extends Component {
               {/* <li>
                 <NavLink
                   className="nav-link"
-                  to="/coming_soon"
+                  to="/coming-soon"
                   onClick={this.toggleMenu}
                 >
                   CAP
@@ -110,7 +119,7 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link"
-                  to="/coming_soon"
+                  to="/coming-soon"
                   onClick={this.toggleMenu}
                 >
                   GUEST TALKS

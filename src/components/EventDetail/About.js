@@ -6,7 +6,9 @@ class About extends Component {
     return (
       <div className="container" style={{ display: "block", width: "80vw" }}>
         {" "}
-        {` About:- ${event.description + "\n" + event.about} \n `}
+        {` About:- ${(!event.about ? event.description : "") +
+          "\n " +
+          event.about} \n `}
         <br />
         <br />
         <br />

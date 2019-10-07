@@ -28,7 +28,9 @@ class Mobileview extends Component {
           <ExpansionPanelDetails>
             <Typography>
               {" "}
-              {` About:- ${event.description + "\n" + event.about} \n `}
+              {` About:- ${(!event.about ? event.description : "") +
+                "\n " +
+                event.about} \n `}
               <br />
               <br />
               {`${

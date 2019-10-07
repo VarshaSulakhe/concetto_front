@@ -13,7 +13,7 @@ export const Workshop_list = [
     name: "AI and ML using Python",
     link:
       "https://drive.google.com/file/d/1J8nV-jwSAwwg_gryinQrKSk0QFROYMIu/view?usp=sharing",
-    img: "https://concetto-front.s3.ap-south-1.amazonaws.com/workshop1.jpg",
+    img: "https://concetto-front.s3.ap-south-1.amazonaws.com/ml-workshop.jpg",
     details:
       "Artificial intelligence and machine learning has also been on the peek of human interest, so Concetto’19 brings to you a workshop on AI and ML using python in association with “Wingfotech Pvt. Ltd.”, the leading training providing firm. The workshop will be of 8-hour duration having a minimal charge of 650 rupees. The workshop will have various topics covered in the sessions",
     reg_link: "https://forms.gle/9BiTMNkahEQMJjqX6"

@@ -67,7 +67,14 @@ class OurTeam extends Component {
                   </div>
                   <div class="box-desc">
                     <h5>{person.name}</h5>
-                    <p>{person.post}</p>
+                    <p>
+                      {person.post}
+                      <br />
+                      <a href={"tel:+91" + person.phone} className="phone-link">
+                        <i className="fa fa-phone" />
+                        &nbsp;{person.phone}
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>

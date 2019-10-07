@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Grenze&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Atomic+Age&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Atomic+Age&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
 
 .row-header {
   margin: 0px auto;
@@ -118,7 +119,6 @@ body
      /* for scrollbar*/
   margin-left: 0px; /*25px*/
 	float: left;
-	overflow-y: scroll;
 	margin-bottom: 25px;
  }
  #thin::-webkit-scrollbar {
@@ -145,9 +145,16 @@ body
 }
 
 html,body{
-  position: relative;
+   /* position: relative; */
+  /* overflow-x: hidden; */
 }
 
+@media (max-width: 800px){
+   html,body{
+     position: relative;
+     overflow-x: hidden;
+   }
+}
 
 .nav-link
 {
@@ -370,7 +377,8 @@ box-shadow: none;
 
 .title{
   color: lightblue;
-  font-family: "Atomic Age",Arial, Helvetica, sans-serif;
+  font-family: "Orbitron", Helvetica, sans-serif;
+  text-shadow: 2px 2px 2px #aaa;
   /* font-size: 2.2rem; */
   /* text-shadow: 2px 2px 2px #aaa; */
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import "./Styles.css";
-import Loading from "../Loading";
+// import Loading from "../Loading";
 import About from "./About";
 import Rules from "./Rules";
 import Details from "./Details";
@@ -92,7 +92,7 @@ class EventDetail extends Component {
               <img
                 src={window.location.origin + "/images/logo.png"}
                 className="img-fluid"
-                alt={Loading}
+                alt={"Loading.."}
               />
             </NavLink>
           </div>

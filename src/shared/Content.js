@@ -1,15 +1,15 @@
 export const HomeContent = [
   {
-    link: "home",
+    link: "about-theme",
     heading: "ABOUT US",
     image1: "https://concetto-front.s3.ap-south-1.amazonaws.com/about1.jpg",
     image2: "https://concetto-front.s3.ap-south-1.amazonaws.com/about2.jpg",
     image3: "https://concetto-front.s3.ap-south-1.amazonaws.com/about3.jpg",
     description:
-      "CONCETTO-2019, the annual Techno-Management fest of IIT (ISM) Dhanbad will be organized from 18th to 20th October 2019, where every year thousands of participants from all across the country come to compete in what is called the largest technical festival of eastern India. Participants shows their talent in technical and management skills on the platform provided by CONCETTO."
+      "CONCETTO-2019, the annual Techno-Management fest of IIT (ISM) Dhanbad will be organized from 18th to 20th October 2019, where every year, thousands of participants from all across the country come to compete in the largest techno-management fest of eastern India. Participants show their technical and management skills on one common platform, CONCETTO."
   },
   {
-    link: "coming_soon",
+    link: "coming-soon",
     heading: "ENGINEERING EXHIBITION",
     image2:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/exibition_main.jpg",
@@ -18,7 +18,7 @@ export const HomeContent = [
     image1:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/exhibition3.jpg",
     description:
-      "This year, for first time in history of concetto, we are proud to announce that we will be having an Engineering Exhibition, where we had invited various colleges and clubs to showcase their best works.... more will revealed soon."
+      "This year, for the first time, in history of Concetto, we are proud to announce that we will be having an Engineering Exhibition, where we had invited various colleges and clubs to showcase their best works. More will be revealed soon."
   },
   {
     link: "events",

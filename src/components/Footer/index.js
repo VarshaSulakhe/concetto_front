@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faInstagram,
-  faYoutube
+  faWhatsapp
 } from "@fortawesome/free-brands-svg-icons";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
@@ -44,8 +44,8 @@ const styles = theme => ({
   instagram: {
     color: "#e84393"
   },
-  youtube: {
-    color: "#e84118"
+  whatsapp: {
+    color: "#23d364"
   }
 });
 class Footer extends React.Component {
@@ -65,11 +65,8 @@ class Footer extends React.Component {
         >
           <FontAwesomeIcon icon={faInstagram} className={classes.instagram} />
         </a>
-        <a
-          href="https://www.youtube.com/watch?v=2FWZDc_e4so&t=1s"
-          className={classes.a}
-        >
-          <FontAwesomeIcon icon={faYoutube} className={classes.youtube} />
+        <a href="https://wa.me/919386667625" className={classes.a}>
+          <FontAwesomeIcon icon={faWhatsapp} className={classes.whatsapp} />
         </a>
       </div>
     );

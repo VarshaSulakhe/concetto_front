@@ -31,7 +31,12 @@ class DepatmentEvent extends Component {
                     />
                   </div>
                   <div className="card-info">
-                    <h2 className="card-title">{event.name}</h2>
+                    <h2
+                      className="card-title"
+                      style={{ textTransform: "uppercase" }}
+                    >
+                      {event.name}
+                    </h2>
                     <p className="card-intro">{event.prizes}</p>
                     <p className="card-intro club-text">{event.dept}</p>
                   </div>

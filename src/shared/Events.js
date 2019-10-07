@@ -22,7 +22,7 @@ export const Events = [
       third: 10
     },
     admins: [
-      "Shambhav Goswami - 784494368",
+      "Shambhav Goswami - 7844949368",
       "Srajan Gupta - 8223060677",
       "Shantanu Rawat - 9424697088",
       "Sourav Sahu - 8825268970"
@@ -203,7 +203,7 @@ export const Events = [
     pdf: "https://drive.google.com/open?id=1zC9GoR8Fvqr9oQnx3yPew_0E2iDRRRdb"
   },
   {
-    name: "Soft Alite",
+    name: "Soft Alight",
     is_team: 1,
     max_participants: 4,
     dept: "",
@@ -237,11 +237,10 @@ export const Events = [
     is_team: 1,
     max_participents: 5,
     dept: "Petroleum engineering",
-    description:
-      "To lift the weights given by us without tumbling.The participants need to build a strong framework'derrick', usually pyramidal in shape and the block and tackle system, supported by the derrick.The wires in the block and tackle system shall be reeled from a reeling platform, drawn by a motor.",
+    description: "",
     is_club: 0,
     about:
-      "The event aims to test the analytical and practical knowledge of the participants to understand the effective combinations of pulleys and running lines in handling of weights.;The assembling of pulleys should be done in such a manner that the system is capable of lifting more weights in relatively less time.",
+      "The event aims to test the analytical and practical knowledge of the participants to understand the effective combinations of pulleys and running lines in handling of weights. The assembling of pulleys should be done in such a manner that the system is capable of lifting more weights in relatively less time.",
     rules: "",
     img: "https://concetto-front.s3.ap-south-1.amazonaws.com/events/petro.jpg",
     prizes: "",
@@ -265,7 +264,7 @@ export const Events = [
     max_participents: 4,
     dept: "Mineral Engineering",
     description:
-      "It involves Designing of magnetic separator modal With help of magnet. Point will be given on the basis of new idea,structure and separation efficiency of separator for given mixture of magnetic material and non magnetic material.",
+      "It involves designing a magnetic separator modal with the help of the magnet. Points will be given based on the new idea, structure and separation efficiency of separator for a given mixture of magnetic material and non-magnetic material.",
     is_club: 0,
     about: "",
     rules:
@@ -298,9 +297,10 @@ export const Events = [
     max_participents: 4,
     dept: "Mining Engineering",
     description:
-      "The desire to create Is one of the deepest yearnings of the human soul. The IDP-Industrial design problems will push the students to think beyond the conventional and to look at in different way and solve in a limited amount of time. The event is simulator which will provide the competitors with the real life environmental industrial challenges.",
+      "The desire to create is one of the deepest yearnings of the human soul. The IDP-Industrial design problems will push the students to think beyond the conventional and to look at differently and solve in a limited amount of time. The event is a simulator which will provide the competitors with the real-life environmental industrial challenges.",
     is_club: 0,
-    about: "",
+    about:
+      "The desire to create is one of the deepest yearnings of the human soul. The IDP-Industrial design problems will push the students to think beyond the conventional and to look at differently and solve in a limited amount of time. The event is a simulator which will provide the competitors with the real-life environmental industrial challenges.",
     rules:
       "Each team can consist of maximum of 4 members.;In case of any discrepancy, the decision of the judge would be binding.",
     img: "https://concetto-front.s3.ap-south-1.amazonaws.com/events/IDP.jpg",
@@ -477,13 +477,14 @@ export const Events = [
       third: 10
     },
     admins: [
-      "Abhishek Raj Parmani - 9079868390",
+      "Abhishek Raj Permani - 9079868390",
       "Swapnil Narayan - 7864024344",
       "Sahil Siyag - 9829102475",
       "Sameer Jain - 9893636504"
     ],
     club: "",
-    link: "https://forms.gle/z21DDUtvxYVBqkPU6",
+    link:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeQPKd_CEO9bTIUW3ARHeFBoE1Lo3KrgAHmymyStG9vReYCIA/viewform",
     pdf:
       "https://drive.google.com/file/d/19vT0rHW8P1pg_nPze0vNkS_SI1jhVzhI/view?usp=sharing"
   },
@@ -627,7 +628,7 @@ export const Events = [
       "The energy obtained from conventional source is limited and therefore we are in a dire need of renewable and efficient sources of energy.",
     is_club: 0,
     about:
-      "The energy obtained from conventional source is limited and therefore we are in a dire need of renewable and efficient sources of energy. Hence the major focus of this generation is to explore the use of alternative sources of energy to meet our ever-increasing energy demands.",
+      "The energy obtained from conventional sources is not expected to last long considering the present day requirements. Thus there is an urgent requirement to find alternative sources. Keeping all this in mind, this event provides you with an opportunity to design a small chemically powered car. You need to safely control and harness the energy of a chemical reaction and use it to make your chem-e-car run while carrying a payload.",
     rules: "",
     img:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/chem+o+car.jpg",
@@ -871,13 +872,14 @@ export const Events = [
       third: 10
     },
     admins: [
-      "Abhishek Raj Parmani - 9079868390",
+      "Abhishek Raj Permani - 9079868390",
       "Swapnil Narayan - 7864024344",
       "Sahil Siyag - 9829102475",
       "Sameer Jain - 9893636504"
     ],
     club: "",
-    link: "https://forms.gle/4zSx14sLFHrbmqAm7",
+    link:
+      "https://docs.google.com/forms/d/e/1FAIpQLSd7aRhx_PL2_BqxjSN1da_6nxwq61jD_dMa29OJzVSKoZc82Q/viewform",
     pdf:
       "https://drive.google.com/file/d/10jB4rrkn_KIFc3DFsXgDO9GXrUXv7pVZ/view?usp=sharing"
   },

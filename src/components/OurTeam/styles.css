@@ -87,3 +87,9 @@ text-decoration: underline;
   -o-background-size: cover;
   background-size: cover;
 }
+ .phone-link{
+color: black !important;
+}
+ .box:hover .phone-link{
+     color: whitesmoke !important;
+ }
